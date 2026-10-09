@@ -1,4 +1,4 @@
-package dip.api;
+package dip.application;
 
 public class BookDto {
     public String title;

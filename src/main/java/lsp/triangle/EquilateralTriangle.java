@@ -1,7 +1,20 @@
 package lsp.triangle;
 
-class EquilateralTriangle extends Triangle {
+class EquilateralTriangle implements Shape {
+    private double side;
+    
     public EquilateralTriangle(double side) {
-        super(side, side, side);
+        this.side = side;
+    }
+
+    @Override
+    public double calculateArea() {
+        double semiPerimeter = (side * 3) / 2;
+        return Math.sqrt(semiPerimeter * (semiPerimeter - side) * (semiPerimeter - side) * (semiPerimeter - side));
+    }
+
+    @Override
+    public double calculatePerimeter() {
+        return side * 3;
     }
 }

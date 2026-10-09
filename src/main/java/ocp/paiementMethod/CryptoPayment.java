@@ -5,7 +5,7 @@ public class CryptoPayment extends PaymentMethod {
         super(PaymentType.CRYPTO);
     }
 
-    public void payWithCrypto(double payment) {
+    public void pay(double payment) {
         System.out.println("Paiement en crypto effectué.");
     }
 }

@@ -1,7 +1,7 @@
 package lsp.bird;
 
 public class FlyingBirdSimulator {
-    public void observeFlyingBird(Bird bird) {
-        bird.fly();
+    public void observeFlyingBird(Flyer flyer) {
+        flyer.fly();
     }
 }

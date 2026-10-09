@@ -1,5 +1,6 @@
 package dip.api;
 
+import dip.application.BookDto;
 import dip.application.BookService;
 import jakarta.ws.rs.core.Response;
 

@@ -1,6 +1,6 @@
 package ocp.paiementMethod;
 
-public class PaymentMethod {
+public abstract class PaymentMethod {
 
     private final PaymentType type;
 
@@ -9,4 +9,6 @@ public class PaymentMethod {
     public PaymentType getType() {
         return type;
     }
+
+    public abstract void pay(double payment);
 }

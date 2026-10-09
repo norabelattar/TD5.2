@@ -1,13 +1,12 @@
 package dip.domain;
 
-import dip.infra.persistence.BookPDFUploader;
-
 public class Book {
     private String title;
-    private BookPDFUploader defaultUploader;
+    private Uploader uploader;
 
-    public Book(String title) {
+    public Book(String title, Uploader uploader) {
         this.title = title;
+        this.uploader = uploader;
     }
 
     public String getTitle() {
@@ -15,6 +14,6 @@ public class Book {
     }
 
     public void uploadWithDefaultMethod(String uploadPath) {
-        defaultUploader.upload(uploadPath, title);
+        uploader.upload(uploadPath, title);
     }
 }

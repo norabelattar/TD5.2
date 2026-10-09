@@ -1,5 +1,5 @@
 package ocp;
 
-public class EmailReportSender {
+public class EmailReportSender implements ReportSender {
     public void sendReport() {}
 }

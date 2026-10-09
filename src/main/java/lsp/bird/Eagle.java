@@ -1,6 +1,6 @@
 package lsp.bird;
 
-public class Eagle implements Bird {
+public class Eagle implements Flyer, Eater {
     @Override
     public void eat() {
         System.console().printf("Eagle eats fish.");

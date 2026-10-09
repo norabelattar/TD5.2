@@ -1,11 +1,12 @@
 package dip.infra.persistence;
 
 import dip.domain.Book;
+import dip.domain.BookRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookRepositoryInMemory {
+public class BookRepositoryInMemory implements BookRepository {
     public static List<Book> books = new ArrayList<>();
 
     public void add(Book book) {

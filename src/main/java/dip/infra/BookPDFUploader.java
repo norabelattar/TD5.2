@@ -1,6 +1,8 @@
-package dip.infra.persistence;
+package dip.infra;
 
-public class BookPDFUploader {
+import dip.domain.Uploader;
+
+public class BookPDFUploader implements Uploader {
     public void upload(String uploadPath, String title) {
         //upload a book in pdf to an upload path
     }

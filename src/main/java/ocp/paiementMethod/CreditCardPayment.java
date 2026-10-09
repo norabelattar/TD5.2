@@ -5,7 +5,7 @@ public class CreditCardPayment extends PaymentMethod {
         super(PaymentType.CREDIT_CARD);
     }
 
-    public void payWithCreditCard(double payment) {
+    public void pay(double payment) {
         System.out.println("Paiement par carte de crédit effectué.");
     }
 }

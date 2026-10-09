@@ -1,6 +1,8 @@
-package dip.infra.persistence;
+package dip.infra;
 
-public class EmailSender {
+import dip.application.Notifier;
+
+public class EmailSender implements Notifier {
     public void notify(String message) {
         // sends an email with message to application admin
     }

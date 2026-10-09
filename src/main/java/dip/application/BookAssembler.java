@@ -1,11 +1,11 @@
 package dip.application;
 
-import dip.api.BookDto;
 import dip.domain.Book;
+import dip.domain.Uploader;
 
 public class BookAssembler {
 
-    public Book fromDto(BookDto bookDto) {
-        return new Book(bookDto.title);
+    public Book fromDto(BookDto bookDto, Uploader uploader) {
+        return new Book(bookDto.title, uploader);
     }
 }
